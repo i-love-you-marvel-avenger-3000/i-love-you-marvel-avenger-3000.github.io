@@ -36,7 +36,7 @@ html {
 	transform: scale(1.1);
 }
 #main {
-		font-family: DIN Next W01 Regular, Open Sans, Segoe UI Symbol;
+		font-family: Roboto,Trebuchet MS,Helvetica,Arial,sans-serif;
 		margin: -8px;
 		background: #FFFFFF;
 }
@@ -111,13 +111,16 @@ a:visited {
 .menu a {
 	margin: 0 3%;
 	text-decoration: none;
-	color: #fff;
+	color: #e8e2e2cf;
 	font-weight: 900;
 	border-bottom: 3px solid #1b1b1b;
-	padding: 8px 0 10px;
+	padding: 8px 0 6px;
 }
 .menu a:hover {
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid #AA1D1D;
+	color: #fff;
+	transition: 0.6s;
+	/*transform: scale(1.1);*/
 }
 select.menu option:not(:checked) {
 	color: #999 !important;
@@ -148,6 +151,7 @@ select.menu option:not(:checked) {
 	margin: 0;
 	position: relative;
 	top: -58px;
+	text-transform: uppercase;
 }
 #h2-header {
 	text-align: center;
@@ -162,7 +166,7 @@ select.menu option:not(:checked) {
 }
 #img-caption {
 	padding: 50px 20%;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin: 60px 15px;
 }
 /*********** HIDDEN MENU section  *************/
@@ -447,6 +451,18 @@ input[type=image]:focus {
 	/** Unhide lightbox **/
 	display: block;
 }
+.lightbox .content {
+	/* Add Animation - Zoom in the Modal 
+	transition: 0.3s;*/
+	animation-name: zoom;
+	animation-duration: 0.3s;
+  }
+  
+  @keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+  }
+
 /**** GRID Areas ****/
 .timeline-circle-2008 {
 	grid-area: center1;
