@@ -3,5 +3,5 @@
 
   $(window).load(function() {
   // Animate loader off screen
-  $('.se-pre-con').fadeOut(2500); 
+  $('.se-pre-con').delay(1000).fadeOut(500); 
 });
