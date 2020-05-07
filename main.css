@@ -811,9 +811,6 @@ footer {
   }
 }
 @media (max-width: 750px) {
-  .hero-container > div > img {
-    object-fit: contain;
-  }
 }
 /****
 @media (min-width: 650px) {
@@ -901,6 +898,12 @@ footer {
     cursor: default;
   }
 }
+@media (max-width: 499px) {
+	.hero-container > div > img {
+	  object-fit: contain;
+	}
+  }
+  
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
 .no-js #loader {
