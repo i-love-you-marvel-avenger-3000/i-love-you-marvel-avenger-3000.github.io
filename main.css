@@ -590,6 +590,7 @@ footer {
 	text-transform: uppercase;
 	margin: 0 5%;
 	font-size: .8rem;
+	line-height: 2rem;
 }
 /*********** Media Queries  *************/
 @media (max-width: 1700px) {
@@ -873,6 +874,10 @@ footer {
 	.timeline-circle {
 		margin: 0;
 		display: none;
+	}
+	.movie-info a {
+		pointer-events: none;
+		cursor: default;
 	}
 }
 /* This only works with JavaScript, 
