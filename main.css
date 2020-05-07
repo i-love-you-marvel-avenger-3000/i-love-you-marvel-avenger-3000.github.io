@@ -173,7 +173,7 @@ select.menu option:not(:checked) {
   margin: 60px 15px;
 }
 #img-caption a {
-	color: tomato;
+  color: tomato;
 }
 /*********** HIDDEN MENU section  *************/
 .hidden-menu {
@@ -250,8 +250,8 @@ input[type=image]:focus + ul#hidden-menu-items {
   position: relative;
 }
 .hero-container > div {
-    filter: grayscale(100);
-    opacity: .5 !important;
+  filter: grayscale(100);
+  opacity: 0.5 !important;
 }
 .hero-container > div:hover {
   box-shadow: 0px 0px 10px #252222;
@@ -693,6 +693,10 @@ footer {
     width: 85%;
     padding: 30px 15px;
   }
+  .hero-container > div {
+    filter: grayscale(0);
+    opacity: 1 !important;
+  }
   .timeline-container {
     width: 96%;
     display: grid;
@@ -836,7 +840,7 @@ footer {
     text-align: left;
   }
   .hero-container > div {
-	  transform: none !important;
+    transform: none !important;
   }
   .footer-container {
     grid-template-columns: 100% 100%;
